@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-health-bg text-health-text font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight text-navy;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F3F6F8;
+}
+::-webkit-scrollbar-thumb {
+  background: #079B84;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #063B5A;
+}
+
+/* Custom Animations and Micro Interactions */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.gradient-text-navy {
+  background: linear-gradient(135deg, #063B5A 0%, #063A78 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-teal {
+  background: linear-gradient(135deg, #079B84 0%, #09BEA2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-pattern {
+  background-color: #063B5A;
+  background-image: radial-gradient(rgba(7, 155, 132, 0.25) 1px, transparent 1px), radial-gradient(rgba(229, 181, 43, 0.15) 1px, #063B5A 1px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+}
+
+/* Focus styles for WCAG accessibility */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 3px solid #E5B52B !important;
+  outline-offset: 2px !important;
+}

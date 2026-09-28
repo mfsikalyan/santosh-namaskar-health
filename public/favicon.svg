@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#063B5A" />
+      <stop offset="100%" stop-color="#04273C" />
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09BEA2" />
+      <stop offset="100%" stop-color="#079B84" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8CE53" />
+      <stop offset="100%" stop-color="#E5B52B" />
+    </linearGradient>
+  </defs>
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="48" fill="url(#navyGrad)"/>
+  <!-- Gold Outer Accent Ring -->
+  <circle cx="50" cy="50" r="45" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" opacity="0.9"/>
+  <!-- Caring Hands / Heart Vector Shape -->
+  <path d="M50 82 C30 68 20 54 20 40 A15 15 0 0 1 50 28 A15 15 0 0 1 80 40 C80 54 70 68 50 82 Z" fill="url(#tealGrad)" opacity="0.25"/>
+  <!-- Medical Cross Symbol -->
+  <rect x="43" y="28" width="14" height="44" rx="4" fill="url(#tealGrad)"/>
+  <rect x="28" y="43" width="44" height="14" rx="4" fill="url(#tealGrad)"/>
+  <!-- Inner Gold Core -->
+  <circle cx="50" cy="50" r="6" fill="url(#goldGrad)"/>
+</svg>
