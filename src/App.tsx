@@ -15,7 +15,7 @@ import { Footer } from './components/Footer';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 import { MobileActionBar } from './components/MobileActionBar';
 import { ModalLegal } from './components/ModalLegal';
-import { BUSINESS, SERVICES } from './config/siteConfig';
+import { BUSINESS, LOCATION, SERVICES } from './config/siteConfig';
 
 export function App() {
   const [legalModalType, setLegalModalType] = useState<'privacy' | 'terms' | null>(null);
@@ -33,17 +33,44 @@ export function App() {
         "image": `${BUSINESS.siteUrl}/assets/images/hero_nursing.jpg`,
         "description": BUSINESS.subTagline,
         "telephone": BUSINESS.phone,
+        "email": LOCATION.email,
         "priceRange": "$$",
         "openingHours": "Mo-Su 00:00-23:59",
-        "areaServed": {
-          "@type": "AdministrativeArea",
-          "name": "Home Healthcare Nursing Service Region"
+        "hasMap": LOCATION.googleMapsDirectUrl,
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": LOCATION.latitude,
+          "longitude": LOCATION.longitude
         },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": BUSINESS.rating,
+          "reviewCount": BUSINESS.reviewsCount
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": LOCATION.addressLine1,
+          "addressLocality": LOCATION.city,
+          "addressRegion": LOCATION.state,
+          "postalCode": LOCATION.pincode,
+          "addressCountry": LOCATION.country
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Bhubaneswar"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Odisha"
+          }
+        ],
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": BUSINESS.phone,
+          "email": LOCATION.email,
           "contactType": "customer service",
-          "availableLanguage": ["English", "Hindi"],
+          "availableLanguage": ["English", "Odia", "Hindi"],
           "hoursAvailable": "Mo-Su 00:00-23:59"
         }
       },

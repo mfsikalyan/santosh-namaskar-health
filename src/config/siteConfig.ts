@@ -40,16 +40,37 @@ export const BUSINESS = {
   name: "NAMASKAR HOME HEALTH CARE SERVICE",
   shortName: "Namaskar Care",
   tagline: "Professional • Hygienic • Safe Patient Care",
-  subTagline: "Trusted nursing care delivered with professionalism, hygiene and compassion — right at your home.",
+  subTagline: "Trusted home nursing care delivered with professionalism, hygiene and compassion in Bhubaneswar.",
   phone: "+91 9827772983",
+  phoneDisplay: "098277 72983",
   phoneRaw: "+919827772983",
   whatsappNumber: "919827772983",
-  whatsappMessage: "Hello Namaskar Home Health Care Service, I would like to know more about your home nursing services.",
-  availability: "24 Hours • 7 Days a Week",
-  availabilityShort: "24x7 Home Service",
-  emergencyHeadline: "Need Home Nursing Care?",
+  whatsappMessage: "Hello Namaskar Home Health Care Service, I would like to inquire about home nursing services in Bhubaneswar.",
+  email: "care@namaskarhomehealthcare.com",
+  availability: "Open 24 Hours • 7 Days a Week",
+  availabilityShort: "Open 24 Hours",
+  emergencyHeadline: "Need Home Nursing Care in Bhubaneswar?",
   emergencySubhead: "Call or WhatsApp us now for prompt home healthcare assistance.",
   siteUrl: "https://namaskarhomehealthcare.com",
+  rating: "5.0",
+  reviewsCount: 3,
+  attributes: ["Women-owned", "Verified Nursing Agency", "24/7 Home Visits"]
+};
+
+export const LOCATION = {
+  addressLine1: "Raghunathpur",
+  addressLine2: "Bhubaneswar, Odisha 751024",
+  fullAddress: "Raghunathpur, Bhubaneswar, Odisha 751024",
+  city: "Bhubaneswar",
+  state: "Odisha",
+  country: "India",
+  pincode: "751024",
+  plusCode: "9RHH+74 Bhubaneswar, Odisha",
+  latitude: 20.3781942,
+  longitude: 85.8278402,
+  email: "care@namaskarhomehealthcare.com",
+  googleMapsEmbedUrl: "https://maps.google.com/maps?q=20.3781942,85.8278402&z=16&output=embed",
+  googleMapsDirectUrl: "https://www.google.com/maps/place/Namaskar+Home+Health+Care+Service/@20.3781942,85.8278402,17z"
 };
 
 export const BRAND_COLORS = {
@@ -64,9 +85,9 @@ export const BRAND_COLORS = {
 
 export const IMAGES = {
   hero: "/assets/images/hero_nursing.jpg",
-  heroAlt: "Compassionate female home nurse in blue uniform checking pulse of happy senior patient in a clean living room",
+  heroAlt: "Compassionate female home nurse checking pulse of happy senior patient in Bhubaneswar",
   about: "/assets/images/about_nursing.jpg",
-  aboutAlt: "Professional female home nurse gently assisting an elderly woman walking safely with a walker at home",
+  aboutAlt: "Professional female home nurse assisting an elderly woman walking safely at home in Bhubaneswar",
   ogImage: "/assets/images/hero_nursing.jpg"
 };
 
@@ -74,11 +95,11 @@ export const SERVICES: ServiceItem[] = [
   {
     id: "wound-dressing",
     title: "Wound Dressing & Post-Surgery Care",
-    shortDesc: "Professional support for sterile wound dressing, suture care, and post-surgical nursing needs at home.",
+    shortDesc: "Professional support for sterile wound dressing, suture care, and post-surgical nursing needs at home in Bhubaneswar.",
     fullDesc: "Comprehensive home nursing support tailored for surgical recovery and wound management. Our trained nursing staff ensures aseptic technique, strict hygienic standards, and careful monitoring of healing progress in the comfort of your home environment.",
     iconName: "Bandage",
     image: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Professional sterile medical wound dressing equipment and bandaging supplies setup for home healthcare",
+    imageAlt: "Professional sterile medical wound dressing equipment setup for home healthcare",
     whenRequested: [
       "Post-operation surgical wound care",
       "Sterile dressing changes for diabetic or chronic wounds",
@@ -161,7 +182,7 @@ export const WHY_CHOOSE_US: FeatureItem[] = [
   {
     id: "pro-care",
     title: "Professional Care",
-    description: "Focused nursing support delivered at home with empathy and medical discipline.",
+    description: "Focused nursing support delivered at home in Bhubaneswar with empathy and medical discipline.",
     iconName: "Award"
   },
   {
@@ -200,7 +221,7 @@ export const HOW_IT_WORKS: StepItem[] = [
   {
     step: 1,
     title: "Contact Us",
-    description: "Call or WhatsApp +91 9827772983 to reach our team immediately."
+    description: "Call or WhatsApp +91 9827772983 to reach our Bhubaneswar team immediately."
   },
   {
     step: 2,
@@ -222,7 +243,7 @@ export const HOW_IT_WORKS: StepItem[] = [
 export const WHO_WE_SERVE: AudienceItem[] = [
   {
     title: "Elderly Patients",
-    description: "Senior citizens requiring regular vital checks, medication assistance, and compassionate home support.",
+    description: "Senior citizens requiring regular vital checks, medication assistance, and compassionate home support in Bhubaneswar.",
     badge: "Senior Care",
     image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=600&q=80",
     imageAlt: "Elderly patient receiving compassionate home nursing assistance"
@@ -266,8 +287,8 @@ export const WHO_WE_SERVE: AudienceItem[] = [
 
 export const FAQS: FAQItem[] = [
   {
-    question: "Do you provide home nursing services?",
-    answer: "Yes, Namaskar Home Health Care Service provides professional nursing support right at the patient's home based on the specific healthcare requirements."
+    question: "Do you provide home nursing services in Bhubaneswar?",
+    answer: "Yes, Namaskar Home Health Care Service provides professional nursing support right at the patient's home in Raghunathpur, Bhubaneswar and surrounding areas."
   },
   {
     question: "Are home visits available 24/7?",
